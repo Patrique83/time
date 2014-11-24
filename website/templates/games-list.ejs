@@ -1,0 +1,12 @@
+<p>
+	<ul>
+	<%
+		list.forEach(function(item)
+		{
+	%>
+		<li><a href="#/<%= system %>/<%= item.index %>"><%= item.name %></a></li>
+	<%
+		});
+	%>
+	</ul>
+</p>

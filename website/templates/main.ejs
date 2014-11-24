@@ -1,0 +1,13 @@
+<%= include('header') %>
+
+	<ul class="nav nav-tabs">
+		<li<%= system == 'nes' ? ' class="active"' : '' %>><a href="#/nes">NES</a></li>
+		<li<%= system == 'snes' ? ' class="active"' : '' %>><a href="#/snes">SNES</a></li>
+		<li<%= system == 'sega' ? ' class="active"' : '' %>><a href="#/sega">SEGA</a></li>
+		<li<%= system == 'gb' ? ' class="active"' : '' %>><a href="#/gb">GB</a></li>
+		<li<%= system == 'gba' ? ' class="active"' : '' %>><a href="#/gba">GBA</a></li>
+	</ul>
+
+	<div class="ajax-loader"></div>
+
+<%= include('footer') %>
