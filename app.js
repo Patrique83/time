@@ -73,19 +73,21 @@ function getRomName(name)
 
 function startWebSrever()
 {
-	systems.forEach(function(system)
-	{
-		var engine = engines[system];
+	// systems.forEach(function(system)
+	// {
+	// 	var engine = engines[system];
 
-		engine.on('download', function(index)
-		{
-			console.log('on engine download', index);
-		});
-		engine.on('upload', function(index, offset, length)
-		{
-			console.log('on engine upload', index, offset, length);
-		});
-	});
+	// 	engine.on('download', function(index)
+	// 	{
+	// 		console.log('on engine download', index);
+	// 	});
+	// 	engine.on('upload', function(index, offset, length)
+	// 	{
+	// 		console.log('on engine upload', index, offset, length);
+	// 	});
+	// });
+
+	console.log('!!! Open [http://localhost:' + config.port + '] in your browser and enjoy!');
 
 	connect()
 		.use('/api/games-list', function(request, response, next)
