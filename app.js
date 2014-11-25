@@ -1,4 +1,6 @@
-console.log('Starting Nebox.Time...');
+#!/usr/bin/env node
+
+console.log('Starting Nesbox.Time...');
 
 var torrentStream = require('torrent-stream');
 var fs = require('fs');
@@ -16,6 +18,8 @@ var romstoreFolder = 'website/romstore';
 
 if(!fs.existsSync(romstoreFolder))
 	fs.mkdirSync(romstoreFolder);
+
+console.log('!!! Initializing romstores, please wait (0-5 min)...');
 
 systems.forEach(function(system)
 {

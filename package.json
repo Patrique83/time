@@ -1,6 +1,6 @@
 {
 	"name": "nesbox-time",
-	"version": "0.0.2",
+	"version": "0.0.1",
 	"description": "Experimental service which allows you to play retro games with Nesbox emulator. It's decentralized, crossplatform and works with torrents.",
 	"main": "app.js",
 
