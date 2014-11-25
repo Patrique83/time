@@ -8,6 +8,9 @@ var zip = require('node-7z');
 var connect = require('connect');
 var serveStatic = require('serve-static');
 var ejs = require('ejs');
+var openurl = require('openurl');
+
+process.chdir(__dirname);
 
 var systems = ['nes', 'snes', 'sega', 'gb', 'gba'];
 
@@ -92,6 +95,8 @@ function startWebSrever()
 	// });
 
 	console.log('!!! Open [http://localhost:' + config.port + '] in your browser and enjoy!');
+
+	openurl.open('http://localhost:' + config.port);
 
 	connect()
 		.use('/api/games-list', function(request, response, next)

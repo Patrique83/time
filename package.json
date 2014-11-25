@@ -15,7 +15,8 @@
 		"ejs": "^1.0.0",
 		"node-7z": "^0.2.0",
 		"serve-static": "^1.7.1",
-		"torrent-stream": "^0.16.2"
+		"torrent-stream": "^0.16.2",
+		"openurl": "^1.1.0"
 	},
 
 	"devDependencies": {},
