@@ -75,6 +75,7 @@ function processPost(request, callback)
 
 function getRomName(name)
 {
+	name = name.split('..').join('.');
 	return name.split('.7z').join('');
 }
 
